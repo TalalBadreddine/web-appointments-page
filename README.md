@@ -1,6 +1,6 @@
 # Assignment Web Application
 
-Our assignment is about a React.js CRUD web application: "Appointments page users", using React.js and Firebase.
+Our assignment is about a React.js CRUD web application: 'Appointments page users', using React.js and Firebase.
 The idea of this assignment is that it allows us to make an appointment for any field of booking sites.
 
 The keys points in our assignment are:
