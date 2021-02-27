@@ -4,6 +4,7 @@ Our assignment is about a React.js CRUD web application: "Appointments page user
 The idea of this assignment is that it allows us to make an appointment for any field of booking sites.
 
 The keys points in our assignment are:
+***************************************
     1- Creating a new appointments.
     2- Show details for existing appointments.
     3- Modify(update) and delete appointments.
@@ -21,6 +22,7 @@ BONUS:
 
 --------------------------------------------------------------------------------------------------------------
 The evaluation will be according to the following points:
+**********************************************************
     1- React.js and Firebase are required.
     2- Clean code.
     3- CRUD operations work properly.
