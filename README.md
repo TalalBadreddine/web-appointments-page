@@ -11,9 +11,11 @@ The keys points in our assignment are:
 Then the React.js CRUD web application required pages to creating, show details and edit appointments data.
 You're free to choose the right design for these pages, provided it is clear.
 You must mention the basic information to book an appointment like basic user information, date and time..
+
 --------------------------------------------------------------------------------------------------------------
 BONUS:
 ******
+<<<<<<< HEAD
     4- Push a notification when a new appointment created in the same time of an existing appointment.
     5- Track of all appointments in calendar view (similar to Google calendar) for the chosen date.
     6- Edit appointments through this calender directly.
@@ -24,6 +26,19 @@ The evaluation will be according to the following points:
     3- CRUD operations work properly.
     4- Clear design and user friendly.
     5-
+=======
+4- Push a notification when a new appointment created in the same time of an existing appointment.
+5- Track of all appointments in calendar view (similar to Google calendar) for the chosen date.
+6- Edit appointments through this calender directly.
+
+--------------------------------------------------------------------------------------------------------------
+The evaluation will be according to the following points:
+1- React.js and Firebase are required.
+2- Clean code.
+3- CRUD operations work properly.
+4- Clear design and user friendly.
+
+>>>>>>> 2d5a9b4c6146a96d04bea7f9c649be8fcc68a627
 --------------------------------------------------------------------------------------------------------------
 
 Good job
