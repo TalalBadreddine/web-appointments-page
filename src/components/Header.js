@@ -1,0 +1,36 @@
+import React from "react";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
+import 'tachyons';
+
+const containerStyle = {
+ // backgroundColor: "#cccccc",
+ // color: "#000000",
+  display: "flex",
+  alignItems: "center",
+  fontWeight: "bold",
+  fontSize: "1.5em",
+  justifyContent: "space-around",
+  padding: "0.5em 1em",
+  width: "100%"
+};
+const Header = (props) => {
+  return(
+    <div style = {containerStyle} id="titlebar">
+    
+      <div>Time Scheduler</div>
+      <Button 
+        variant="contained"
+        color="primary"
+        startIcon={<AddIcon />}
+        onClick={props.onShowFormClick}
+        title={props.formVisible ? `Hide Form` : `Add Event`}
+        disabled={props.formVisible}
+        className = 'grow'
+      >
+        Add Event
+      </Button>
+  </div>
+);
+}
+export default Header;
