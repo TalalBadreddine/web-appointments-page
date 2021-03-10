@@ -1,4 +1,7 @@
 import React, {UseState,useEffect, useState} from "react";
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
+
 
 const AppointmentForm = (props) => {
     const initialFieldValues = {
@@ -6,6 +9,8 @@ const AppointmentForm = (props) => {
         mobile:'',
         email:'',
         address:'',
+        date:'',
+        time:'',
     }
 
     var [values, setValues] = useState(initialFieldValues)
@@ -73,11 +78,34 @@ const AppointmentForm = (props) => {
                 />
             </div>
             <br></br>
+            <div className="form-group input-group col-md-6">
+                <div className="input-group-prepend">
+                    <div className="input-group-text" style={{height:38 + 'px',}}>
+                        <i className="fas fa-calendar">&nbsp;&nbsp;</i>
+                    </div>
+                </div>
+                <input type="date" className="form-control" placeholder="dd/mm/yyyy" name="date" value=
+                {values.date} onChange={handleInputChange}
+                />
+            </div>
+            <br></br>
+            <div className="form-group input-group col-md-6">
+                <div className="input-group-prepend">
+                    <div className="input-group-text" style={{height:38 + 'px',}}>
+                        <i className="fas fa-clock">&nbsp;&nbsp;</i>
+                    </div>
+                </div>
+                <input type="time" className="form-control" name="time" value=
+                {values.time} onChange={handleInputChange}
+                />
+            </div>
+            <br></br>
             </div>
             <div className="form-group">
                 <textarea className="form-control" placeholder="Address" name="address" value={values.address} onChange={handleInputChange}/>
             </div>
             <br></br>
+            
             <div>
                <input style={{marginLeft: 170 + 'px',}} type="submit" value={props.currentId==''?"Save":"Update"} className="btn btn-primary btn-block"/>
             </div>

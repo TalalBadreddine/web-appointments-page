@@ -72,6 +72,7 @@ const Appointments = () => {
                         <th>Full Name</th>
                         <th>Mobile</th>
                         <th>Email</th>
+                        <th>Date</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -82,6 +83,8 @@ const Appointments = () => {
                                 <td>{appointmentObjects[id].fullName}</td>
                                 <td>{appointmentObjects[id].mobile}</td>
                                 <td>{appointmentObjects[id].email}</td>
+                                <td>{appointmentObjects[id].date}</td>
+
                                 <td>
                                     <a className="btn text-primary" onClick={()=>{setCurrentId(id)}}>
                                         <i className="fas fa-pencil-alt"></i>
